@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Yanone+Kaffeesatz:wght@200&display=swap');
+:root{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.innerContainer{
+    display: flex;
+    justify-content: center;
+
+}
+
+.imageDiv{
+    position: relative;
+    width: 30vw;
+    height: 98.2vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logoDiv{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    bottom: 20vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logoDiv > img{
+    height: auto;
+    width: 150px;
+}
+
+.imageDiv > img{
+    object-fit: cover;
+    width: 100%;
+    height: 65%;
+    object-position: 90%;
+}
+
+.logoDiv > p{
+    font-size: 12px;
+    position: absolute;
+    bottom: -38px;
+}
+
+.logoDiv > p > a{
+    color: inherit;
+}
+
+.outerFormDiv{
+    width: 35vw;
+    height: 63.9vh;
+    margin: auto 0;
+}
+
+.infoAboutForm{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2.5rem;
+}
+
+p{
+    margin: 0;
+}
+
+.formDiv{
+    height: 70%;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+}
+
+.formInputDiv{
+    height: 50%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1em 1em 1em 0;
+}
+
+.submitButtonDiv{
+    height: 31%;
+}
+
+form > h2{
+    margin: 0;
+}
+
+.formDiv > form{
+    height: 100%;
+}
+
+button, input{
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 1.5px solid #D5D5D5;
+    border-radius: 5%;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #104C9B;
+}
+
+button{
+    width: 28%;
+}
+
+input{
+    width: 80%;
+}
+
+label, input{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 80%;
+}
+
+.fifthDiv > span{
+    height: fit-content;
+    width: fit-content;
+    color: red;
+    font-size: 70%;
+}
+
+.submitButtonDiv > p{
+    margin-top: 2rem;
+}
+
+.error{
+    border: 2px solid red;
+}
+
+.validPassword{
+    border: 2px solid green;
+}

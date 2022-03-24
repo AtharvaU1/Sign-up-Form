@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up!</title>
+    <link rel="stylesheet" href="cssFiles/style.css">
+    <script src="/jsFiles/script.js" defer></script>
+</head>
+<body>    
+    <div class="container">
+        <div class="innerContainer">
+            <div class='imageDiv'>
+                <div class="logoDiv">
+                    <img src="/cssFiles/empire.png" alt="Empire Logo">
+                    <p><a href="https://imgur.com/t/Creativity/pQ2A3">Source</a> from Star Wars</p>
+                </div>
+                <img src="/cssFiles/lambdaShuttleAndTieInterceptor.jpeg" alt="TIE Interceptor">
+            
+            </div>
+            <div class="outerFormDiv">
+                <div class="infoAboutForm">
+                    <p> <em>Note: This is not a real service!</em> </p>
+                    <p>The Empire needs you to fight against the rebels! We need pilots having atleast 1 year of experience in flying commercial/transport ships. Newbies are welcome too.</p>
+                    <p>Sign up <em>now</em> to get started.</p>
+                </div>
+                <div class="formDiv">
+                    <form action="" method="post" onsubmit="return false;">
+                        <h2>Get one step closer to becoming a TIE pilot!</h2>
+                        <div class="formInputDiv">
+                            <div class="firstDiv">
+                                <label for="firstName">*First Name:</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Darth" required>
+                            </div>
+                            <div class="secondDiv">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Vader">
+                            </div>
+                            <div class="thirdDiv">
+                                <label for="email">*Email ID:</label>
+                                <input type="email" id="email" name="email" placeholder="darthvader123@gmail.com" required>
+                            </div>
+                            <div class="fourthDiv">
+                                <label for="exp">Years of Experience:</label>
+                                <input type="number" id="exp" name="Experience" placeholder="1" min="1" max="7000">
+                            </div>
+                            <div class="fifthDiv">
+                                <label for="password">*Password:</label>
+                                <input type="password" id="password" name="password" placeholder="E-3778Q-1" required>
+                                <span id="errorMessage"></span>
+                            </div>
+                            <div class="sixthDiv">
+                                <label for="confirmPassword">*Confirm Password:</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            </div>
+                        </div>
+                        <div class="submitButtonDiv">
+                            <button type="submit">Create Account</button>
+                            <p>Already have an account? <a href="">Sign In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
